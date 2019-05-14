@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="User Score" max_length="40" name="x_snc_peerreview_user_score" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Average Score" max_length="40" name="average_score" type="float"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Net Promoter Score" max_length="40" name="net_promoter_score" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>
